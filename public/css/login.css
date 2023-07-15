@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', serif;
+}
+.superior{
+    
+    margin: auto;
+    margin-top: 20px;
+    border-style: solid;
+    display: flex;
+    width: 80%;
+    background-color: rgb(168, 243, 168);
+}
+.superior img{
+    height: 150px;
+    width: 150px;
+   
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-left: solid;
+
+}
+.info h1{
+    font-size: 30px;
+    
+}
+.info p{
+    text-align: center;
+    font-size: 20px;
+}
+.inferior{
+    text-align: center;
+    border: solid;
+    width: 80%;
+    margin: auto;
+    background-color: yellow;
+}
+.inferior h2{
+    font-size: 25px;
+    
+}
+.title img{
+    height: 150px;
+    width: 150px;
+   
+}
+.title{
+    margin: auto;
+    width: 80%;
+    margin-top: 40px;
+    text-align: center;
+}
+.campos{
+    margin: auto;
+    width: 80%;
+    margin-top: 5em;
+    text-align: center;
+    margin-left: 9em;
+
+}
+.campos input{
+    width: 25%;
+    height: 20px;
+    font-size: 18px;
+    border-color: black;
+    
+}
+.campos label{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+button{
+ 
+    width: 35%;
+    font-size: 18px;
+    margin: auto;
+    background-color:rgba(11, 34, 238, 0.884);
+    color: white;
+    padding: 3px;
+    font-weight: 600;
+    border: none;
+    margin-bottom: 3em;
+    transition: all .2s ease;
+}
+
+button:hover {
+    background-color:  rgb(31, 144, 250);
+}
+form{
+    margin: auto;
+    width: 80%;
+    border: solid;
+    background-color: rgb(199, 243, 199);
+}

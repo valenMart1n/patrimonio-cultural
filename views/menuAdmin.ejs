@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/admin.css">
+    <script src="/js/admin.js"></script>
+    <script src="https://kit.fontawesome.com/2c91db2581.js" crossorigin="anonymous"></script>
+    <title>Admin</title>
+</head>
+<body>
+    
+   
+    <div>
+        <ul id="lista">
+            <p class="title">LISTA DE USUARIOS</p>
+            
+            <% for(let i = 0; i < listaUsuarios.length; i++) {%>
+                <li><%= listaUsuarios[i].apellidoNombres%>  
+                    <div class="botones">
+                    <form action="/users/delete/<%= listaUsuarios[i].id %>/?_method=DELETE %>" method="POST">
+                        <button class="eliminar" type="submit"><i class="fa-solid fa-trash"></i> Elminar</button>
+                    </form> 
+                    <a href="/users/info/<%= listaUsuarios[i].id%>" target="_blank"> 
+                    <i class="fa-solid fa-pen-to-square"></i> Editar</a>
+                </div>
+                    </li>
+            <%}%>
+        </ul>
+    </div>
+  
+   
+    <form action="/users/create" method="POST">
+    <div class="crear">
+       <div class="titulo"><p>DATOS</p></div>
+       <div class="campos" id="usuario"><label>Usuario: </label><input name="usuario" type="text"></div>
+       <div class="campos" id="password"><label>Contraseña: </label><input name="password" type="password"></div>
+       <div class="campos" id="nombre"><label>Apellido y Nombres: </label><input name="nombre" type="text"></div>
+       <div class="campos" id="institucion"><label>Institución: </label> <select name="institucion" id="institucion">
+                                        <option value="" selected><-Indique la institución del usuario-></option>
+                                         <% for(let i = 0; i < listaParroquias.length; i++) { %>
+                                                <option value="<%= listaParroquias[i].id %>"><%= listaParroquias[i].id %> <%= listaParroquias[i].descripcion %></option>
+                                         <% } %></select></div>
+        <div class="campos" id="domicilio"><label>Domicilio: </label><input name="domicilio" type="text"></div>
+        <div class="campos" id="telefono"><label>Teléfono: </label><input name="telefono" type="number"></div>
+        <div class="campos" id="email"><lanobel>Email: </label><input name="email" type="email"></div>
+        <button class="agregar" type="submit"><i class="fa-solid fa-plus"></i>  Agregar</button>
+        </form>
+   
+    
+        
+    </div>
+
+</body>
+</html>

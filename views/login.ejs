@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Inicio</title>
+</head>
+<body>
+
+    <div class="cartel">
+        <div class="superior">
+            
+            <div class="img">
+            <img src="/images/parroquias/logo.jpg">
+            </div>
+            <div class="info">
+           <h1>INVENTARIO DE BIENES CULTURALES</h1>
+            <p>Delegación para los Bienes Culturales de la Iglesia <br> Arquidiócesis de Paraná - Entre Ríos</p>
+            </div>
+        </div>
+        <div class="inferior"><h2>Iniciar Sesión</h2></div>
+    </div>
+    <form action="/users/logged" method="POST">
+    <div class="campos"><label>Usuario: </label><input type="text" name="usuario"></div>
+    <div class="campos"><label>Contraseña: </label><input type="password" name="password" id="password"></div>
+
+    <div class="campos"><button type="submit">Ingresar</button></div>
+    </form>
+</body>
+</html>

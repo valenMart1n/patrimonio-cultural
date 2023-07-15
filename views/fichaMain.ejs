@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/fichaMain.css">
+    
+    <script src="https://kit.fontawesome.com/2c91db2581.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="/js/ficha1.js"></script>
+   
+    <title>Ficha Principal</title>
+</head>
+<body>
+    <div class="pagina1">
+    <div class="cartel">
+        <div class="superior">
+            
+            <div class="img">
+            <img src="/images/parroquias/logo.jpg">
+            </div>
+            <div class="info">
+           <h1>INVENTARIO DE BIENES CULTURALES</h1>
+            <p>Delegación para los Bienes Culturales de la Iglesia <br> Arquidiócesis de Paraná - Entre Ríos</p>
+            </div>
+        </div>
+        <div class="inferior"><h2>FICHA PRINCIPAL</h2></div>
+    </div>
+    <form>
+    <div class="datos1">
+        <div><label>FECHA: </label><input id="fecha" type="date" name=""><p class="invisible" class="error_style"  class="error_fecha" id="error_fecha" name="error_fecha">Debe ingresar una fecha válida</p></div>  
+        <div><label>APELLIDO Y NOMBRE: </label><input name="nombre" id="nombre" class="nombre" type="text"><p class="invisible" class="error_style"  class="error_nombre" id="error_nombre" name="error_nombre">Éste campo es obligatorio</p></div>
+    </div>
+    <div class="datos2">
+    <div><label for="">1 - OBJETO</label><input name="objeto" class="objeto" type="text" name="" id=""><p class="invisible" class="error_style"  class="error_objeto" id="error_objeto" name="error_objeto">Debe rellenar el campo objeto</p></div>
+    <div><label for="">2 - DESCRIPCIÓN</label><input name="descripcion" class="descripcion" type="text" name="" id=""><p class="invisible" class="error_style"  class="error_descripcion" id="error_descripcion" name="error_descripcion">Debe rellenar el campo descripción</p></div>
+    <div><label for="">3 - CANTIDAD</label><input name="cantidad" class="cantidad" type="number" name="" id=""><p class="invisible" class="error_style"  class="error_cantidad" id="error_cantidad" name="error_cantidad">Debe rellenar el campo cantidad</p></div>
+    <div><label for="">4 - CÓDIGO UNÍVOCO</label><input name="codigo" class="codigo" type="text" name="" id=""><p class="invisible" class="error_style"  class="error_codigo" id="error_codigo" name="error_codigo">Debe ingresar un código válido</p></div>
+    </div>
+    <div class="datos3"><label for="">5 - IMÁGENES</label></div>
+    <div class="imagenes">
+    <div class="imagen"><input type="file" id="imagen1" name="imagen1"><img height="100%" width="100%" id="imagenPrevia1" src="" /></div>
+    <div class="imagen"><input type="file" id="imagen2" name="imagen2"><img height="100%" width="100%" id="imagenPrevia2" src="" /></div>
+    <div class="imagen"><input type="file" id="imagen3" name="imagen3"><img height="100%" width="100%" id="imagenPrevia3" src="" /></div>
+    <div class="imagen"><input type="file" id="imagen4" name="imagen4"><img height="100%" width="100%" id="imagenPrevia4" src="" /></div>
+    <div class="imagen"><input type="file" id="imagen5" name="imagen5"><img height="100%" width="100%" id="imagenPrevia5" src="" /></div>
+    <div class="imagen"><input type="file" id="imagen6" name="imagen6"><img height="100%" width="100%" id="imagenPrevia6" src="" /></div>
+    </div>
+    
+    <div class="datos4">
+    <button type="submit">Siguiente</button>
+    </div>
+    </form>
+    
+    </div>
+    <div class="pagina2">
+    
+      <%-include("pages/ficha2.ejs") %>
+    </div>
+</body>
+</html>

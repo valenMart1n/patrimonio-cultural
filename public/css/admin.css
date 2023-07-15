@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Times, serif;
+}
+body{
+    display: flex;
+}
+
+ul{
+    
+    border: solid;
+    border-width: 1px;
+    width: 60vw;
+    margin-left: 5px;
+    height: 34em;
+    margin-top: 10px;
+    background-color: rgb(199, 243, 199);
+}
+li{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    justify-content: space-between;
+    font-size: 15px;
+    align-items: center;
+}
+
+
+.crear{
+    display: flex;
+    flex-wrap: wrap;
+    border: solid;
+    border-width: 1px;
+    width: 35vw;
+    margin-left: 5px;
+    margin-top: 10px;
+    float: right;
+    height: 34em;
+    background-color: rgb(199, 243, 199);
+}
+.campos{
+    margin-left: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+.titulo{
+    text-align: center;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 25px;
+    border-bottom: solid;
+    border-bottom-width: 3px;
+    font-size: 20px;
+    font-weight: 500;
+    
+}
+.title{
+    margin-top: 5px;
+    text-align: center;
+    border-bottom: solid;
+    margin-bottom: 20px;
+    height: 37px;
+    border-bottom-width: 3px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    background-color: rgb(253, 209, 65);
+    color: white;
+    padding: 5px;
+    transition: all .2s ease;
+}
+
+.eliminar{
+    background-color: rgba(202, 37, 37, 0.671);
+    color: white;
+    padding: 5px;
+    border: none;
+    margin-right: 10px;
+    transition: all .2s ease;
+}
+
+.botones{
+    display: flex;
+}
+
+.agregar{
+    background-color: rgb(84, 84, 238);
+    border: none;
+    padding: 5px;
+    color: white;
+    margin-left: 30px;
+    margin-bottom: 10px;
+    transition: all .2s ease;
+}
+
+li:nth-child(even) {
+    background-color: rgb(199, 243, 199);
+  }
+  
+  li:nth-child(odd) {
+    background-color: rgb(168, 243, 168);
+  }
+
+  .agregar:hover {
+    background-color:  rgb(31, 144, 250);
+}
+
+.eliminar:hover{
+    background-color: rgb(255, 112, 112);
+}
+a:hover{
+    background-color: rgb(245, 190, 10);
+}
