@@ -24,7 +24,7 @@ let usuariosController = {
     },
     admin: async (req, res) => {
         if(req.session.nivel == 1){
-        let listaUsuarios = await db.Usuario.findAll();
+        let listaUsuarios = await db.Usuario.findAll({where: {nivel: 2}});
         let listaParroquias = await db.Parroquia.findAll({
             order: [
               ['descripcion', 'ASC']]}
